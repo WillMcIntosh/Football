@@ -16,53 +16,71 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Changes score when 3 point button is pressed
+     * Changes score when touchdown button is pressed
      */
     public void touchdown(View view) {
         switch (view.getId()) {
             case R.id.team_a_td:
+                scoreTeamA += 6;
+                displayForTeamA(scoreTeamA);
+                break;
+            case R.id.team_b_td:
+                scoreTeamB += 6;
+                displayForTeamB(scoreTeamB);
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    /**
+     * Changes score when extra point button is pressed
+     */
+    public void extraPoint(View view) {
+        switch (view.getId()) {
+            case R.id.team_a_xp:
+                scoreTeamA++;
+                displayForTeamA(scoreTeamA);
+                break;
+            case R.id.team_b_xp:
+                scoreTeamB++;
+                displayForTeamB(scoreTeamB);
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * Changes score when field goal button is pressed
+     */
+    public void fieldGoal(View view) {
+        switch (view.getId()) {
+            case R.id.team_a_fg:
                 scoreTeamA += 3;
                 displayForTeamA(scoreTeamA);
                 break;
-            case R.id.team_b_three:
+            case R.id.team_b_fg:
                 scoreTeamB += 3;
                 displayForTeamB(scoreTeamB);
                 break;
             default:
                 break;
         }
-
     }
 
     /**
-     * Changes score when 2 point button is pressed
+     * Changes score when safety button is pressed
      */
-    public void extraPoint(View view) {
+    public void safety(View view) {
         switch (view.getId()) {
-            case R.id.team_a_xp:
+            case R.id.team_a_safety:
                 scoreTeamA += 2;
                 displayForTeamA(scoreTeamA);
                 break;
-            case R.id.team_b_xp:
+            case R.id.team_b_safety:
                 scoreTeamB += 2;
-                displayForTeamB(scoreTeamB);
-                break;
-            default:
-                break;
-        }
-    }
-
-    /**
-     * Changes score when free throw button is pressed
-     */
-    public void fieldGoal(View view) {
-        switch (view.getId()) {
-            case R.id.team_a_fg:
-                scoreTeamA++;
-                displayForTeamA(scoreTeamA);
-                break;
-            case R.id.team_b_fg:
-                scoreTeamB++;
                 displayForTeamB(scoreTeamB);
                 break;
             default:
@@ -73,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Reset both scores to zero
      */
-
     public void resetScores(View view) {
         scoreTeamA = 0;
         scoreTeamB = 0;
