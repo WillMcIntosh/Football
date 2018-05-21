@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/background">
 
     <!--
         Scoring buttons layout
@@ -23,18 +24,18 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-
             <EditText
+                android:id="@+id/team_a_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:textColor="#616161"
+                android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:background="@android:color/transparent"
                 android:hint="@string/name"
-                android:inputType="textCapWords"/>
+                android:inputType="textCapWords" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -45,7 +46,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="56sp" />
 
             <Button
@@ -117,11 +118,11 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:textColor="#616161"
+                android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:background="@android:color/transparent"
                 android:hint="@string/name"
-                android:inputType="textCapWords"/>
+                android:inputType="textCapWords" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -132,7 +133,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="56sp" />
 
             <Button
@@ -179,6 +180,7 @@
 
     </LinearLayout>
 
+    <!--Reset button area-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -191,8 +193,8 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="4dp"
             android:onClick="resetScores"
-            android:text="Reset" />
+            android:text="@string/reset" />
 
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
