@@ -4,4 +4,5 @@
     <string name="extra_point">Extra Point</string>
     <string name="field_goal">Field Goal</string>
     <string name="backwards_touchdown">Safety</string>
+    <string name="name">Enter Team Name</string>
 </resources>

@@ -24,15 +24,17 @@
             android:orientation="vertical">
 
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Team A"
                 android:textColor="#616161"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:hint="@string/name"
+                android:inputType="textCapWords"/>
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -108,15 +110,18 @@
             android:orientation="vertical">
 
 
-            <TextView
+            <EditText
+                android:id="@+id/team_b_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Team B"
                 android:textColor="#616161"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:hint="@string/name"
+                android:inputType="textCapWords"/>
 
             <TextView
                 android:id="@+id/team_b_score"
