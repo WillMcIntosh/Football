@@ -47,34 +47,44 @@
                 android:textSize="56sp" />
 
             <Button
-                android:id="@+id/team_a_three"
+                android:id="@+id/team_a_td"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="threePoints"
-                android:text="+3 Points" />
+                android:onClick="touchdown"
+                android:text="@string/touchdown" />
 
             <Button
-                android:id="@+id/team_a_two"
+                android:id="@+id/team_a_xp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="twoPoints"
-                android:text="+2 Points" />
+                android:onClick="extraPoint"
+                android:text="@string/extra_point" />
 
             <Button
-                android:id="@+id/team_a_free"
+                android:id="@+id/team_a_fg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freeThrow"
-                android:text="Free Throw" />
+                android:onClick="fieldGoal"
+                android:text="@string/field_goal" />
+
+            <Button
+                android:id="@+id/team_a_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="safety"
+                android:text="@string/backwards_touchdown" />
 
         </LinearLayout>
 
@@ -121,34 +131,44 @@
                 android:textSize="56sp" />
 
             <Button
-                android:id="@+id/team_b_three"
+                android:id="@+id/team_b_touchdown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="threePoints"
-                android:text="+3 Points" />
+                android:onClick="touchdown"
+                android:text="@string/touchdown" />
 
             <Button
-                android:id="@+id/team_b_two"
+                android:id="@+id/team_b_xp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="twoPoints"
-                android:text="+2 Points" />
+                android:onClick="extraPoint"
+                android:text="@string/extra_point" />
 
             <Button
-                android:id="@+id/team_b_free"
+                android:id="@+id/team_b_fg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freeThrow"
-                android:text="Free Throw" />
+                android:onClick="fieldGoal"
+                android:text="@string/field_goal" />
+
+            <Button
+                android:id="@+id/team_b_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="safety"
+                android:text="@string/backwards_touchdown" />
 
         </LinearLayout>
 

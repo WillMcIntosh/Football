@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Football!</string>
+    <string name="touchdown">Touchdown</string>
+    <string name="extra_point">Extra Point</string>
+    <string name="field_goal">Field Goal</string>
+    <string name="backwards_touchdown">Safety</string>
 </resources>
