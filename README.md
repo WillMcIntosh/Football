@@ -8,4 +8,5 @@ I also added EditText areas to enter custom team names.
 
 
 Android Icon generated using [Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/index.html)
+
 The football icon is a font awesome icon. License info [here](https://fontawesome.com/license)
