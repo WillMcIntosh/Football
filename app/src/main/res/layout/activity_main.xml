@@ -7,17 +7,13 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
-    <!--
-        Scoring buttons layout
-    -->
+    <!-- Scoring buttons layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!--
-        team A layout with grey center line
-        -->
+        <!-- team A layout with grey center line -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -91,19 +87,14 @@
 
         </LinearLayout>
 
-        <!--
-        center line
-        -->
+        <!-- center line -->
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
             android:background="@android:color/darker_gray" />
 
-
-        <!--
-       team B layout
-       -->
+        <!-- team B layout -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
